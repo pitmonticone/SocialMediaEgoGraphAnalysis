@@ -15,7 +15,7 @@
 
 <!-- Title -->
 <h1 align="center">
-  Digital Epidemiology Project
+  Social Physics Project
 </h1>
 
 <!-- Subtitle -->
