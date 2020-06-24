@@ -1,0 +1,392 @@
+\documentclass[aps,twocolumn,secnumarabic,nobalancelastpage,amsmath,amssymb,
+nofootinbib]{revtex4}
+
+\usepackage{hyperref}
+\usepackage{graphics}      % standard graphics specifications
+\usepackage{graphicx}      % alternative graphics specifications
+\usepackage{longtable}     % helps with long table options
+\usepackage{url}           % for on-line citations
+\usepackage{bm}            % special 'bold-math' package
+\usepackage{pdflscape}
+\usepackage{subfigure}
+\usepackage{subfloat}
+\makeindex
+
+\begin{document}
+
+\title{Dataset Analysis and CNN Models Optimization for Plant Disease
+	Classification}
+\author {D. Orsenigo}
+\thanks{davide.orsenigo@edu.unito.it}
+\author {C. Moroni}
+\thanks{claudio.moroni@edu.unito.it}
+\author {P. Monticone}
+\thanks{pietro.monticone@edu.unito.it}
+\affiliation    {University of Turin}
+
+\date{23 June 2020}
+\begin{abstract}
+	We have attended the Kaggle challange \emph{Plant Pathology 2020 -
+		FGVC7}. In this effort we have trained a convolutional neural network
+	model with the given training dataset to classify testing images into
+	different disease categories. During the training phase we have adopted
+	class balancing, data augmentation, optimal dropout, epoch grid
+	searching and, wherever possible, we have also manually fine-tuned the
+	auxiliary elements of the pipeline. The SVD decomposition of the
+	dataset, the convolutional filters and activation maps have been
+	visualized. We have ultimately achieved a mean column-wise ROC AUC of
+	0.937 applying \texttt{EKM}, a relatively shallow CNN defined and
+	trained from scratch, and 0.972 applying the pre-trained Keras model
+	\texttt{DenseNet121}.
+\end{abstract}
+\maketitle
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Problem}
+Misdiagnosis of the many diseases impacting agricultural crops can lead to misuse of chemicals leading to the emergence of resistant pathogen strains, increased input costs, and more outbreaks with significant economic loss and environmental impacts. Current disease diagnosis based on human scouting is time-consuming and expensive, and although computer-vision based models have the promise to increase efficiency, the great variance in symptoms due to age of infected tissues, genetic variations, and light conditions within trees decreases the accuracy of detection.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Data}
+Both the training and the testing datasets are composed of 1821
+high-quality, real-life symptom images of multiple apple foliar diseases
+to be classified into four categories: \texttt{healthy} (\(h\)),
+\texttt{multiple\_diseases} (\(m\)), \texttt{rust} (\(r\)),
+\texttt{scab} (\(s\)). 
+
+Altough a leaf labeled as \texttt{multiple\_diseases} could be affected
+by a variety of diseases including rust, scab or both, we treated the
+classes as mutually exclusive because there is no taxonomy: in principle
+the model should distinguish between all four classes, as none of them
+is an abstraction of any of the others. The dataset is not balanced, but
+distributed as follows \((h = 516, m = 91, r = 622, s = 592)\).
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.9\linewidth]{Images/InputImages}
+	\caption{Sample of training images.}
+	\label{fig:inputimages}
+\end{figure}
+
+
+Even if we have ultimately decided not to apply the \textbf{PCA} to
+reduce the dimensionality of the dataset, we believe it might be
+interesting to visualize the first ten principal directions and
+qualitatively compare them with a sequence of principal directions with
+lower retained variance. As we can appreciate in the figures reported in
+the Appendix \ref{pca}, the principal components with
+lower retained variance correspond to almost pure noise and from the
+retained variance assesment (using the criterion of 90\% variance
+retention) we have obtained 429 components.
+
+Here instead we visualize the first two principal components of a
+\textbf{truncated SVD} to qualitatively investigate the linear
+separability of the dataset \footnote{\textbf{Assumption}: if the
+	dataset is linearly separable, the direction along which which the
+	classes diverge is one of the principal components with larger
+	retained variance, otherwise the noise would be greater than the
+	signal.}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{Images/TruncatedSVD_preSMOTE}
+	\caption{Pre-\texttt{SMOTE} truncated SVD.}
+	\label{fig:pre-smote}
+\end{figure}
+
+
+As one could have resonably expected given such a high dimensionality,
+the dataset is not linearly separable. 
+
+Later in the report we will describe an attempt using a
+\ref{ae}, while in the next section we can verify the amplification of the classes performed by \texttt{SMOTE} and recognize the clustering of the generated points.
+
+\section{Methods}\label{methods}
+
+\subsection{Class Balancing with
+		\texttt{SMOTE}\label{smote}}
+
+\texttt{SMOTE(sampling\_strategy,\ k\_neighbors)} is a class balancing
+algorithm that operates as follows:
+
+\begin{itemize}
+
+\item
+(one of) the minority class(es) is considered ;
+\vspace{-0.2cm}\item
+a point is randomly chosen and its first \texttt{n\_neighbors} nearest
+neighbors are found ;
+\vspace{-0.2cm}\item
+one of those nearest neighbors is then randomly selected, and the
+vector between this point and the originally selected point is drawn ;
+\vspace{-0.2cm}\item
+this vector is multiplied by a number between 0 and 1, and the
+resulting synthetic point is added to the dataset.
+\end{itemize}
+
+Besides the baseline variant, \texttt{SVMSMOTE} and \texttt{ADASYN} have
+been tested too:
+
+\begin{itemize}
+\item
+\texttt{SVMSMOTE} starts by fitting an SVM on the data, identifies the
+points which are more prone to mis-classification (i.e.~those on the
+border of the class cluster) via its support vectors and then will
+oversample those points more than the others.
+\vspace{-0.2cm}\item
+\texttt{ADASYN} instead draws from a distribution over the minority
+class(es) that is pointwise inversely proportional to their density,
+so that more points are generated where the minority class(es) are
+sparser, and less points where they are more dense.
+\end{itemize}
+
+We have obtained the best performance applying baseline \texttt{SMOTE}
+with some fine-tuning on the \texttt{sampling\_strategy} \footnote{The
+value \texttt{all} means that all classes are resampled to match the
+size of the majority class.} and the \texttt{n\_neighbors} parameters.
+For more details see Appendix \ref{platform-limitations}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Images/TruncatedSVD_postSMOTE}
+	\caption{Post-\texttt{SMOTE} truncated SVD.}\label{fig:post-smote}
+\end{figure}
+
+\subsection{Data Augmentation with Keras
+		\texttt{ImageDataGenerator}\label{data-generator}}
+
+We have adopted the Keras \texttt{ImageDataGenerator} and, after a
+manual inspection of the images, we found that the best data
+augmentation technique was a random planar rotation combined with random
+horizontal flip. \footnote{For further information read the
+\href{https://keras.io/api/preprocessing/image/}{Keras image pre-processing API}.}
+
+\subsection{Model Architecture Exploration}\label{exploration}
+
+We have implemented an exploration of all models and here is
+reported the \textbf{grid search} that achieved the best performance:
+
+\begin{itemize}
+\def\labelenumi{\arabic{enumi}.}
+\item
+some exploration and fine-tuning of the layers and parameters of the
+models (i.p. a dropout layer for the \texttt{EKM} only) ;
+\vspace{-0.2cm}\item
+variations of the optimizer (for the \texttt{EKM} only) ;
+\vspace{-0.2cm}\item
+optimal dropout and epoch number search ;
+\vspace{-0.2cm}\item
+checkpointing .
+\end{itemize}
+
+We couldn't implement \textbf{early stopping} both in \texttt{EKM} and
+\texttt{DenseNet121}\footnote{\texttt{DenseNet121} is a CNN whose main feature relies on the connection between layers that are non contiguous (i.e.~the output of the first layer is not only of the input of the second layer but also the third, fourth, etc.), which allows for feature reutilization that ultimately improves performance.}, since the fluctuations in either validation loss, categorical accuracy or mean column-wise ROC AUC where too high to
+properly set the \texttt{min\_delta} and \texttt{patience} parameters in the \href{https://www.tensorflow.org/api_docs/python/tf/keras/callbacks/EarlyStopping}{TensorFlow implementation}. 
+
+The best choice of the optimizer for the \texttt{EKM} proved to be the
+\texttt{RMSprop}, while the standard \texttt{adam} performed pretty well with the \texttt{DenseNet121}. The manual implementations of the dropout and early stopping searches acted simultaneoulsy, so they performed like a grid search. The dropout, epoch values and checkpoint corresponding to the highest mean column-wise ROC AUC were saved and used during the testing phase. 
+
+Then, in order to establish the quantitative impact of stocasticity in
+the initialization of the weights on \texttt{EKM}, another \texttt{EKM} (that we will call\texttt{EKM1}) with the best drop is trained and validated, and the best epochs of the previously checkpointed model and \texttt{EKM1} are compared. There was a small difference, therefore we decided to make three submissions: one with the baseline \texttt{EKM} re-trained on all the data and with the best drop, one with the checkpointed model and one with the \texttt{DenseNet121}.
+
+Besides fluctuations, we have noticed that the \texttt{DenseNet121}
+tends to reach higher submission scores. See Appendix \ref{training-histories}.
+
+\subsection{Convolutional Autoencoder}\label{ae}
+
+The best we could achieve by inserting a covolutional autoencoder
+between the smoted data, augmented data and the model training is a
+0.7 mean column-wise ROC AUC, despite the large number of the
+configurations that have been tried. The reason behind this relatively
+poor performance could be that on the one hand an autoencoder with no
+pooling on the encoder side makes little sense in terms of
+dimensionality reduction, while on the other hand even a single
+bidimensonal maxpooling caused the output image to be too little for the last \texttt{EKM} layer to classify. See Appendix \ref{platform-limitations} and \ref{exploration}. 
+
+The only way way we have managed to run it and see at least some loss
+drop was to build a very shallow autoencoder (i.e.~just a couple of
+layers besides the input and the output), with the result that the loss
+didn't decrease significantly. Anyway, inspired by the work of others
+and by some active trial and error, we have had a chance to collect some architectural criteria to build a convolutional autoencoder that at least exhibits learning. The following is to be intended as an empirical recipe, with no or little theoretical foundation supporting the choice of its ingredients. 
+
+The autoencoder is composed of an encoder and a decoder. Obviously the
+encoder should start with an \texttt{input} layer, followed by some
+blocks of \texttt{Conv2D} and \texttt{Pooling} layers. Deeper layers
+should have decreasing filter numbers (for images as big as ours, a
+range from 64 to 32 should work). The decoder should start with a
+specular copy of the encoder, where \texttt{Conv2D} layers are
+substituted by \texttt{Conv2DTranspose} and \texttt{Pooling} by
+\texttt{UpSampling}. Then the last two layers of the decoder should be a \texttt{BatchNormalization} layer and \texttt{Conv2DTranspose} with 3
+filters (in order to be able to compare output with input) activated by
+a sigmoid (which explains the \texttt{BatchNormalization\ layer}). The
+unknown number of \texttt{Conv2D}-\texttt{Pooling} blocks in the encoder (that determines the number of \texttt{Conv2DTranspose}-\texttt{UpSampling} in the decoder) has to be
+jointly connected with the number of \texttt{Conv2D}-\texttt{Pooling}
+layers of the network. See \ref{model-architecture}.
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{Images/AEShort}
+	\caption{Schematic representation of the convolutional autoencoder.}\label{fig:ae}
+\end{figure}
+
+\subsection{Selected Model Architecture}\label{model-architecture}
+
+Some online resaerch and active trial and error with the network
+architecture gave us some clues about how to build from scratch an
+effective, dataset-dependent model for image classification. 
+
+Obviously the network should start with a \texttt{input} layer, followed by blocks of \texttt{Conv2D}-\texttt{Pooling}\footnote{\texttt{MaxPooling}
+in our case.} layers. The number of these blocks should be such that
+the last of them outputs a representation of \(n \times n\) pixels (
+\(\times\: c\) channels) where \(n\) is of the order of units. Then this
+should be followed by 1-2 dense layers, and a final dense classifier
+layer. If the classification is binary (sigmoid), then the last layer
+should be preceeded by a \texttt{BatchNormalization} layer.
+
+The first convolutional layer of the model uses 3 x 3 filters with depth of 3 \footnote{Equal to the number of channels of its input.}. Since the visualization of the convolutionl filters within the trained \texttt{EKM} might provide insight into how the model works, in FIG.  \ref{fig:filtersekm} we have represented the first seven filters of the first convolutional layer as rows of three subplots (one column per channel): the darker the squares the smaller the weights.
+
+In order to capture the application of filters to a selected testing image or deeper activation outputs and therefore trying to understand what features of the input are detected or preserved in the activation maps\footnote{We should verify that the maps close to the input image
+detect high-resolution, fine-grained detail, whereas maps close to the
+model output extract coarser, more abstract concepts.}, in FIG.\ref{fig:fm9},\ref{fig:fm6} and \ref{fig:fm2} we visualize a $4 \times 4$ matrix of subplots showing a sample of feature maps extracted from the first, the third and the fifth convolutional layer. 
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.7\linewidth]{Images/BaseNetShort}
+	\caption{Schematic representation of the selected model architecture.}\label{fig:basenet}
+\end{figure}
+
+\section{Results}\label{results}
+
+The performance of the models has been evaluated on \textbf{mean
+column-wise ROC AUC}: 0.972 for \texttt{DenseNet121} and 0.937 for
+\texttt{EKM}.
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Images/ConfusionMatrixDenseNet121}
+	\includegraphics[width=0.7\linewidth]{Images/ConfusionMatrixEKM}
+	\caption{Confusion matrices of \texttt{EKM} (bottom) and DenseNet121 (top) on validation set.}
+	\label{fig:confusionmatrixdensenet121}
+\end{figure}
+
+
+\section{Conclusions}\label{conclusions}
+
+Since the optimal epoch number varies with the size of training dataset,
+a possible third attempt to obtain it would have seen the best epoch
+number to use in the testing phase, when the model is re-trained on all
+training data, extrapolated from a \texttt{(best-epoch,\ training-set-size)} plot (given that stocasticity has not been relevant). 
+
+This has been practically impossible for us because of two main reasons: technical difficulty in combining Sci-kit learning curves with a Keras model necessarily trained with generators, and Appendix \ref{platform-limitations}. Those limitations prevented us from instantiating a single \texttt{Pipeline} object integrating all the elements (\texttt{SMOTE}, \texttt{ImageDataGenerator}, \texttt{Model}): this could have allowed us to perform a more extensive and reliable\footnote{If coupled with \emph{cross validation} instead of 80\%-20\% splitting.} grid search. Finally, as we have already mentioned, those computational limitations prevented us from implementing an effective convolutional autoencoder: if we used the full-sized images, the autoencoder may have been deeper and that could have plausibly yielded a better performance.
+
+
+\appendix
+
+
+\section{Online Content}\label{additional-material}
+
+\begin{itemize}
+
+\item
+Explore the
+\href{https://github.com/InPhyT/NeuralNetworksProject}{GitHub
+	repository} of the project.
+\vspace{-0.2cm}\item
+Read the code in the
+\href{https://nbviewer.jupyter.org/github/InPhyT/NeuralNetworksProject/blob/master/Notebooks/notebook.ipynb}{Jupyter
+	notebook}.
+\vspace{-0.2cm}\item
+Run the code in the
+\href{https://www.kaggle.com/inphyt2020/neuralnetworksproject}{Kaggle
+	notebook}.
+\end{itemize}
+
+\section{Platform Limitations}\label{platform-limitations}
+
+Since the last unstable version of GPU-supported TensorFlow is required
+to run the code and we haven't been able to set the proper kernels up on
+our local machines, we have been constrained to rely on a publicly
+available cloud interactive environment like \emph{Kaggle}, which
+provided free out of the box kernels for our purposes. The only
+limitations are in terms of CPU RAM, which forced us to downsize the
+images to about $200 \times 200$ pixels.
+
+\section{Visualization}\label{visualization}
+
+\subsection*{PCA}\label{pca}
+
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Images/PCA1}
+	\caption{The first ten principal directions of the PCA.}
+	\label{fig:pca1}
+\end{figure}
+\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Images/PCA200}
+	\caption{Directions 200-210 of the PCA.}
+	\label{fig:pca200}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.7\linewidth]{Images/ExplainedVariance90}
+	\caption{Explained variance with optimal number of components.}
+	\label{fig:explainedvariance90}
+\end{figure}
+
+
+\subsection*{Training Histories}\label{training-histories}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Images/TrainingHistoryEKM}
+	\caption{Training history of the \texttt{EKM}.}
+	\label{fig:traininghistoryekm}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.8\linewidth]{Images/TrainingHistoryDenseNet121}
+	\caption{Training history of the \texttt{DenseNet121}.}
+	\label{fig:traininghistorydensenet121}
+\end{figure}
+
+\newpage
+
+\subsection*{Filters and Activation Maps}
+
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.65\linewidth]{Images/FiltersEKM}
+	\caption{The first seven filters of the first convolutional layer of the \texttt{EKM}.}
+	\label{fig:filtersekm}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.65\linewidth]{Images/FeatureMaps0}
+	
+	\caption{Activation maps extracted from the first convolutional layer of \texttt{EKM}.}
+	\label{fig:fm9}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.65\linewidth]{Images/FeatureMaps4}
+	
+	\caption{Activation maps extracted from the third convolutional layer of \texttt{EKM}.}
+	\label{fig:fm6}
+\end{figure}
+\begin{figure}[h!]
+	\centering
+	\includegraphics[width=0.65\linewidth]{Images/FeatureMaps8}
+	
+	\caption{Activation maps extracted from the fifth convolutional layer of \texttt{EKM}.}
+	\label{fig:fm2}
+\end{figure}
+
+\pagebreak
+
+\nocite{*}
+\bibliography{Bibliography}
+
+\end{document}
