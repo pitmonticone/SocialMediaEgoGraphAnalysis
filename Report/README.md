@@ -16,7 +16,7 @@
 
 <!-- Title -->
 <h1 align="center">
-  Insert Project Subtitle
+  Insert Project Title
 </h1>
 
 <!-- Subtitle -->
