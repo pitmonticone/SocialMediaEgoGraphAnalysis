@@ -2,11 +2,11 @@
 </p>
 
 <p align="center">
-    <img alt="Size" src="https://img.shields.io/github/repo-size/InPhyT/DigitalEpidemiologyProject">
+    <img alt="Size" src="https://img.shields.io/github/repo-size/InPhyT/SocialPhysicsProject">
   </a>
-    <img alt="Languages" src="https://img.shields.io/github/languages/count/InPhyT/DigitalEpidemiologyProject">
+    <img alt="Languages" src="https://img.shields.io/github/languages/count/InPhyT/SocialPhysicsProject">
   </a>
-    <img alt="Contributors" src="https://img.shields.io/github/contributors/InPhyT/DigitalEpidemiologyProject">
+    <img alt="Contributors" src="https://img.shields.io/github/contributors/InPhyT/SocialPhysicsProject">
   </a>
     <img alt="MIT Licence" src="https://img.shields.io/badge/License-MIT-yellow.svg">
   </a>
@@ -27,13 +27,13 @@
 </p>
 
 <p align="center">
-  <a href="https://www.kaggle.com/inphyt2020/digitalepidemiologyproject">
+  <a href="https://www.kaggle.com/inphyt2020/socialphysicsproject">
     <img alt="Kaggle" src="https://kaggle.com/static/images/open-in-kaggle.svg">
   </a>
-  <a href="https://nbviewer.jupyter.org/github/InPhyT/DigitalEpidemiologyProject/">
+  <a href="https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/">
     <img alt="nbviewer" src="https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg">
   </a>
-  <a href="https://colab.research.google.com/github/InPhyT/DigitalEpidemiologyProject/blob/master">
+  <a href="https://colab.research.google.com/github/InPhyT/SocialPhysicsProject/blob/master">
     <img alt="Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
   </a>
   
@@ -41,8 +41,8 @@
 
 ## How to Explore this Project
 
-* Read the report in [PDF](https://inphyt.github.io/DigitalEpidemiologyProject/Report/report.pdf) or [HTML](https://inphyt.github.io/DigitalEpidemiologyProject/Report/report.html) format.
-* Read the code in the [Jupyter notebook](https://nbviewer.jupyter.org/github/InPhyT/DigitalEpidemiologyProject/blob/master/Notebooks/notebook.ipynb).
+* Read the report in [PDF](https://inphyt.github.io/SocialPhysicsProject/Report/report.pdf) or [HTML](https://inphyt.github.io/SocialPhysicsProject/Report/report.html) format.
+* Read the code in the [Jupyter notebook](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/blob/master/Notebooks/notebook.ipynb).
 * Run the code in the [Kaggle notebook](https://www.kaggle.com/inphyt2020/digitalepidemiologyproject).
 
 ## Extended Abstract
