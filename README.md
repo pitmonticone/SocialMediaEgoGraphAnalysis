@@ -4,11 +4,18 @@
 <p align="center">
     <img alt="Size" src="https://img.shields.io/github/repo-size/InPhyT/SocialPhysicsProject">
   </a>
-    <img alt="Languages" src="https://img.shields.io/github/languages/count/InPhyT/SocialPhysicsProject">
+  <img alt="Forks" src="https://img.shields.io/github/forks/InPhyT/SocialPhysicsProject">
   </a>
+  <img alt="Stars" src="https://img.shields.io/github/stars/InPhyT/SocialPhysicsProject">
+  </a>
+  <img alt="Languages" src="https://img.shields.io/github/languages/count/InPhyT/SocialPhysicsProject">
+  </a>
+  <a href="https://github.com/InPhyT/SocialPhysicsProject/graphs/contributors">
     <img alt="Contributors" src="https://img.shields.io/github/contributors/InPhyT/SocialPhysicsProject">
   </a>
-    <img alt="MIT Licence" src="https://img.shields.io/badge/License-MIT-yellow.svg">
+  <img alt="Licence" src="https://img.shields.io/github/license/InPhyT/SocialPhysicsProject">
+  </a>
+  <img alt="Twitter" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FInPhyT%2FSocialPhysicsProject"
   </a>
   
 </p>
