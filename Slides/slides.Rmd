@@ -1,8 +1,8 @@
 ---
 title: "Social Physics Project"
 subtitle: '<em>Twitter Network Analysis</em> <br><br>'
-author: 'Pietro Monticone [`r icon::fa("at")`](pietro.monticone@edu.unito.it) [`r icon::fa("github")`](https://github.com/pitmonticone) <br> Claudio Moroni [`r icon::fa("at")`](claudio.moroni@edu.unito.it) [`r icon::fa("github")`](https://github.com/claudio20497)  <br> Davide Orsenigo [`r icon::fa("at")`](davide.orsenigo@edu.unito.it) [`r icon::fa("github")`](https://github.com/dadorse) <br><br>'
-date: "*University of Turin* | `r format(Sys.time(), '%d %B %Y')`" 
+author: 'P.Monticone [`r icon::fa("github")`](https://github.com/pitmonticone) | C.Moroni [`r icon::fa("github")`](https://github.com/claudio20497) | D.Orsenigo [`r icon::fa("github")`](https://github.com/dadorse) <br><br>'
+date: "University of Turin | `r format(Sys.time(), '%d %B %Y')`" 
 output:
   xaringan::moon_reader:
     lib_dir: libs
