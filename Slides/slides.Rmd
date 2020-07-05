@@ -1,0 +1,48 @@
+---
+title: "Social Physics Project"
+subtitle: '<em>Twitter Network Analysis</em> <br><br>'
+author: 'Pietro Monticone [`r icon::fa("at")`](pietro.monticone@edu.unito.it) [`r icon::fa("github")`](https://github.com/pitmonticone) <br> Claudio Moroni [`r icon::fa("at")`](claudio.moroni@edu.unito.it) [`r icon::fa("github")`](https://github.com/claudio20497)  <br> Davide Orsenigo [`r icon::fa("at")`](davide.orsenigo@edu.unito.it) [`r icon::fa("github")`](https://github.com/dadorse) <br><br>'
+date: "*University of Turin* | `r format(Sys.time(), '%d %B %Y')`" 
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    css: xaringan-themer.css
+    nature:
+      highlightStyle: tomorrow-night-bright
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, include = FALSE, eval = FALSE) 
+library(DT)
+library(knitr)
+library(tidyverse)
+```
+
+name: low-resolution
+class: center 
+
+### Low Resolution 
+
+$$Q = \frac{1}{W}\sum_C\Large( W_{C} - \frac{s^2}{4W}\Large)$$
+![Low](figures/PietroMonticone_Low.png)
+
+.left[.footnote[<small> **Footnote** </small>]]
+
+---
+name: medium-resolution
+class: center 
+
+### Medium Resolution 
+
+![Medium](figures/PietroMonticone_Medium.png)
+
+---
+name: high-resolution
+class: center 
+
+### High Resolution 
+
+![](figures/PietroMonticone_High.png)
+

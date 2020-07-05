@@ -1,0 +1,44 @@
+---
+---
+
+@import "{{ site.theme }}";
+@import url(https://fonts.googleapis.com/css?family=Fira+Mono);
+@import url(https://fonts.googleapis.com/css?family=Quattrocento);
+
+body {
+  font-family: 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif;
+  font-weight: normal;
+  color: #272822;
+}
+h1, h2, h3 {
+  font-family: Quattrocento;
+  color: #342c5c;
+}
+h2 {
+  font-weight: 600;
+}
+h3{
+  margin: 0 0 5;
+  font-weight: 600;
+}
+h1 {
+  font-weight: 600;
+}
+a {
+  color: #342c5c;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 1px solid;
+}
+a:hover {
+  color: #342c5c;
+  border-bottom: none;
+  font-weight: normal;
+}
+a:visited{
+  color: #4e428a;
+}
+code {
+  font-family: Fira Mono, 'Lucida Console', Monaco, monospace;
+  font-size: 90%;
+}
