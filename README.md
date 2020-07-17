@@ -57,6 +57,6 @@
 
 | | | |
 |:--------:|:-------:|:--------:|
-| ![Facebook1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook1.png) Facebook1 | ![Facebook1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook1.png) Facebook1 |
-![Facebook1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook1.png) Facebook1 |
+| ![Facebook1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook1.png) Facebook 1 | ![Facebook2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook2.png) Facebook 2 |
+![Facebook3](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook3.png) Facebook 3 |
 
