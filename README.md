@@ -66,5 +66,5 @@
 
 | | |
 |:--------:|:-------:|
-| ![@ClaudioMoroni3_2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_2.png) @ClaudioMoroni3 | ![@PietroMonticone_2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_2.png) @PietroMonticone |
+| ![@ClaudioMoroni3_2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_2.png) @ClaudioMoroni3 | ![@PietroMonticone_2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone2NW.png) @PietroMonticone |
 
