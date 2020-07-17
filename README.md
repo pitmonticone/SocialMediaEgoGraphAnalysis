@@ -56,10 +56,9 @@
 * Run the code in the [Kaggle notebook](https://www.kaggle.com/inphyt2020/digitalepidemiologyproject).
 
 ## First Order Ego Graphs 
-| Facebook | Facebook | Facebook |
-|:--------:|:-------:|:--------:|
-| ![Facebook1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook1.png) Anonymous User 1 | ![Facebook2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook2.png) Anonymous User 2 | ![Facebook3](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook3.png) Anonymous User 3 |
-| ![Facebook4](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook4.png) Anonymous User 4 | ![Facebook5](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook5.png) Anonymous User 5 | 
+| Facebook | Facebook | Facebook |Facebook | Facebook |
+|:--------:|:-------:|:--------:|:-------:|:--------:|
+| ![Facebook1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook1.png) Anonymous User 1 | ![Facebook2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook2.png) Anonymous User 2 | ![Facebook3](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook3.png) Anonymous User 3 | ![Facebook4](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook4.png) Anonymous User 4 | ![Facebook5](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook5.png) Anonymous User 5 | 
 
 | Twitter | Twitter |
 |:--------:|:-------:|
