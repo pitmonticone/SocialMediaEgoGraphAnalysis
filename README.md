@@ -61,5 +61,5 @@
 
 | Twitter | Twitter |Twitter | Twitter |
 |:--------:|:-------:|:--------:|:-------:|
-| ![@ClaudioMoroni3_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_1.png) @ClaudioMoroni3 | ![@PietroMonticone_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_1.png) @PietroMonticone | ![@ClaudioMoroni3_2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_2.png) @ClaudioMoroni3 | ![@PietroMonticone_22](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_22.png) @PietroMonticone |
+| ![@ClaudioMoroni3_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_1.png) @ClaudioMoroni3 | ![@PietroMonticone_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_1.png) @PietroMonticone | ![@ClaudioMoroni3_2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_2.png) @ClaudioMoroni3 | ![@PietroMonticone_22](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_21.png) @PietroMonticone |
 
