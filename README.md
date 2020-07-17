@@ -67,7 +67,7 @@
   Twitter
 </h3>
 
-| ![@ClaudioMoroni3_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_1.png) @ClaudioMoroni3 | ![@PietroMonticone_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_1.png) [@PietroMonticone]() | ![@ClaudioMoroni3_2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_2.png) @ClaudioMoroni3 (2ⁿᵈ Order¹) | ![@PietroMonticone_22](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_21.png) [@PietroMonticone]() (2ⁿᵈ Order¹)|
+| ![@ClaudioMoroni3_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_1.png) @ClaudioMoroni3 | ![@PietroMonticone_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_1.png) [@PietroMonticone]() | ![@ClaudioMoroni3_2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_2.png) @ClaudioMoroni3¹ | ![@PietroMonticone_22](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_21.png) [@PietroMonticone]()¹|
 |:--------:|:-------:|:--------:|:-------:|
 
-<sup>**[1]** The second order egograph isn't closed.</sup>
+<sup>**[1]** This is a second order egograph comprising all the nodes, but not all the edges.</sup>
