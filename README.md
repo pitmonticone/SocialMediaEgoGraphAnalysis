@@ -56,7 +56,6 @@
 * Run the code in the [Kaggle notebook](https://www.kaggle.com/inphyt2020/digitalepidemiologyproject).
 
 | | | |
-|:--------:|:-------:|:--------:|
-| ![Facebook1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook1.png) Facebook 1 | ![Facebook2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook2.png) Facebook 2 | ![Facebook3](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook3.png) Facebook 3 |
-| ![Facebook4](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook4.png) Facebook 4 | ![Facebook5](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook5.png) Facebook 5 | |
-| ![@ClaudioMoroni3_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_1.png) ClaudioMoroni3_1 | ![@PietroMonticone_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_1.png) PietroMonticone_1 | |
+| ![Facebook1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook1.png) Facebook User 1 | ![Facebook2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook2.png) Facebook User 2 | ![Facebook3](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook3.png) Facebook User 3 |
+| ![Facebook4](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook4.png) Facebook User 4 | ![Facebook5](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook5.png) Facebook User 5 | |
+| ![@ClaudioMoroni3_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_1.png) @ClaudioMoroni3_1 | ![@PietroMonticone_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_1.png) @PietroMonticone_1 | |
