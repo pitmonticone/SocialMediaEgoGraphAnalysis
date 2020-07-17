@@ -55,6 +55,7 @@
 * Read the code in the [Jupyter notebook](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/blob/master/Notebooks/notebook.ipynb).
 * Run the code in the [Kaggle notebook](https://www.kaggle.com/inphyt2020/digitalepidemiologyproject).
 
+## First Order Ego Graphs 
 | | | |
 |:--------:|:-------:|:--------:|
 | ![Facebook1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook1.png) Facebook User 1 | ![Facebook2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook2.png) Facebook User 2 | ![Facebook3](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook3.png) Facebook User 3 |
