@@ -26,9 +26,9 @@
 </h1>
 
 <!-- Subtitle -->
-<h3 align="center">
+<h2 align="center">
   Social Ego Graph Analysis on Facebook & Twitter
-</h3>
+</h2>
 
 <!-- Badges -->
 </p>
