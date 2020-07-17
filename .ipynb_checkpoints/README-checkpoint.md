@@ -26,17 +26,14 @@
 </h1>
 
 <!-- Subtitle -->
-<h3 align="center">
-  Insert Project Title
-</h3>
+<h2 align="center">
+  Social Ego Graph Analysis on Facebook & Twitter
+</h2>
 
 <!-- Badges -->
 </p>
 
 <p align="center">
-  <a href="https://www.kaggle.com/inphyt2020/socialphysicsproject">
-    <img alt="Kaggle" src="https://kaggle.com/static/images/open-in-kaggle.svg">
-  </a>
   <a href="https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/">
     <img alt="nbviewer" src="https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg">
   </a>
@@ -46,41 +43,27 @@
   
 </p>
 
-## How to Explore this Project
+## Documents
 
-* Read the report in [PDF](https://inphyt.github.io/SocialPhysicsProject/Report/report.pdf) or [HTML](https://inphyt.github.io/SocialPhysicsProject/Report/report.html) format.
-* Read the code in the [Jupyter notebook](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/blob/master/Notebooks/notebook.ipynb).
-* Run the code in the [Kaggle notebook](https://www.kaggle.com/inphyt2020/digitalepidemiologyproject).
+| Contents  | Notebooks |
+| ---- | ---- |
+| [PDF]()  | [Jupyter Notebooks]() |
+| [HTML]() | [Kaggle Notebook]() |
 
-| | | |
-|:-------------------------:|:-------------------------:|:-------------------------:|
-|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">  blah |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|
-|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|
-|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://user-images.githubusercontent.com/297678/29892310-03e92256-8d83-11e7-9b58-986dcb6f702e.png">|
 
-## Extended Abstract
+<h3 align="center">
+  Facebook
+</h3>
 
-### Problem 
+| ![Facebook1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook1.png) [Anonymous User 1](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/) | ![Facebook2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook2.png) [Anonymous User 2](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/) | ![Facebook3](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook3.png) Anonymous User 3 | ![Facebook4](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook4.png) Anonymous User 4 | ![Facebook5](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook5.png) Anonymous User 5 | 
+|:--------:|:-------:|:--------:|:-------:|:--------:|
 
-### Objectives
 
-* Objective A
-* Objective B
-* Objective C
+<h3 align="center">
+  Twitter
+</h3>
 
-### Data 
+| ![@ClaudioMoroni3_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_1.png) @ClaudioMoroni3 | ![@PietroMonticone_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_1.png) [@PietroMonticone](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/) | ![@ClaudioMoroni3_2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_2.png) @ClaudioMoroni3¹ | ![@PietroMonticone_22](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_21.png) [@PietroMonticone](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/)¹|
+|:--------:|:-------:|:--------:|:-------:|
 
-### Methods
-
-1. Method A 
-1. Method B 
-1. Method C 
-1. Method D 
-
-### Results 
-
-### References 
-
-1. Reference A
-1. Reference B
-1. Reference C
+<sup>**[1]** This is a second order egograph comprising all the nodes, but not all the edges.</sup>
