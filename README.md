@@ -55,9 +55,53 @@
 * Read the code in the [Jupyter notebook](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/blob/master/Notebooks/notebook.ipynb).
 * Run the code in the [Kaggle notebook](https://www.kaggle.com/inphyt2020/digitalepidemiologyproject).
 
+<table class="css3">
+<thead>
+<tr>
+  <th>1</th>
+  <th>2</th>
+  <th>3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>4</td>
+  <td>5</td>
+  <td>6</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>8</td>
+  <td>9</td>
+</tr>
+</tbody>
+</table>
+
+<table class="css2">
+<thead>
+<tr>
+  <th>1</th>
+  <th>2</th>
+  <th>3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>4</td>
+  <td>5</td>
+  <td>6</td>
+</tr>
+<tr>
+  <td>7</td>
+  <td>8</td>
+  <td>9</td>
+</tr>
+</tbody>
+</table>
+
 ## First Order Ego Graphs 
 | Facebook | Facebook | Facebook |
-|--------|-------|--------|
+|:--------:|:-------:|:--------:|
 | ![Facebook1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook1.png) Anonymous User 1 | ![Facebook2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook2.png) Anonymous User 2 | ![Facebook3](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook3.png) Anonymous User 3 |
 
 | Facebook | Facebook |
