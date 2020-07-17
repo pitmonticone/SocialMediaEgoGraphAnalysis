@@ -57,30 +57,3 @@
 |<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone0.5.png">  @PietroMonticone |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone0.6.png">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone0.7.png">|
 |<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone0.8.png">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone0.9.png">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone1.1.png">|
 |<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone1.2.png">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone1.3.png">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone1.3.png">|
-
-## Extended Abstract
-
-### Problem 
-
-### Objectives
-
-* Objective A
-* Objective B
-* Objective C
-
-### Data 
-
-### Methods
-
-1. Method A 
-1. Method B 
-1. Method C 
-1. Method D 
-
-### Results 
-
-### References 
-
-1. Reference A
-1. Reference B
-1. Reference C
