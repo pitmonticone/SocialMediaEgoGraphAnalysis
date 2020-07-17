@@ -34,9 +34,6 @@
 </p>
 
 <p align="center">
-  <a href="https://www.kaggle.com/inphyt2020/socialphysicsproject">
-    <img alt="Kaggle" src="https://kaggle.com/static/images/open-in-kaggle.svg">
-  </a>
   <a href="https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/">
     <img alt="nbviewer" src="https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg">
   </a>
