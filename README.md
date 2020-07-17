@@ -27,7 +27,7 @@
 
 <!-- Subtitle -->
 <h3 align="center">
-  Insert Project Title
+  Social Ego Graph Analysis on Facebook & Twitter
 </h3>
 
 <!-- Badges -->
@@ -66,5 +66,5 @@
 
 | | |
 |:--------:|:-------:|
-| ![@ClaudioMoroni3_2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_2.png) @ClaudioMoroni3 | ![@PietroMonticone_2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone2NW.png) @PietroMonticone |
+| ![@ClaudioMoroni3_2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_2.png) @ClaudioMoroni3 | ![@PietroMonticone_22](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_22.png) @PietroMonticone |
 
