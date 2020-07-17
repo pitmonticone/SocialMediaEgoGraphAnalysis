@@ -48,12 +48,15 @@
 
 ## How to Explore this Project
 
+* Tutorial 
+* Notebooks 
+* nbviewer
 * Read the report in [PDF](https://inphyt.github.io/SocialPhysicsProject/Report/report.pdf) or [HTML](https://inphyt.github.io/SocialPhysicsProject/Report/report.html) format.
 * Read the code in the [Jupyter notebook](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/blob/master/Notebooks/notebook.ipynb).
 * Run the code in the [Kaggle notebook](https://www.kaggle.com/inphyt2020/digitalepidemiologyproject).
 
 | | | |
 |:--------:|:-------:|:--------:|
-|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone0.5.png">  @PietroMonticone |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone0.6.png">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone0.7.png">|
-|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone0.8.png">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone0.9.png">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone1.1.png">|
-|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone1.2.png">  |  <img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone1.3.png">|<img width="1604" alt="screen shot 2017-08-07 at 12 18 15 pm" src="https://github.com/InPhyT/SocialPhysicsProject/blob/master/Notebooks/Images/%40PietroMonticone1.3.png">|
+| ![Facebook1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook1.png) Facebook1 | ![Facebook1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook1.png) Facebook1 |
+![Facebook1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook1.png) Facebook1 |
+
