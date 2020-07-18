@@ -74,4 +74,5 @@
 | ![@ClaudioMoroni3_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_1.png) @ClaudioMoroni3 | ![@PietroMonticone_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_1.png) [@PietroMonticone](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/Analysis/Twitter1.ipynb) | ![@ClaudioMoroni3_2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_2.png) @ClaudioMoroni3¹ | ![@PietroMonticone_22](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_21.png) [@PietroMonticone](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/Analysis/Twitter2.ipynb)¹|
 |:--------:|:-------:|:--------:|:-------:|
 
+<br>
 <sup>**[1]** This is a second order egograph with missing edges.</sup>
