@@ -43,12 +43,16 @@
   
 </p>
 
-## Documents
 
-| Contents  | Notebooks |
+<h2 align="center">
+  Contents
+</h2>
+
+| Scrapers  | Data | 
 | ---- | ---- |
-| [PDF]()  | [Jupyter Notebooks]() |
-| [HTML]() | [Kaggle Notebook]() |
+| [Twitter Friends Egograph Scraper](https://inphyt.github.io/SocialPhysicsProject/RTweet_TwitterFriendsEgographScraper.html) with `rtweet` | [@ClaudioMoroni3](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Data/GraphML/%40ClaudioMoroni3_1.graphml)
+| [Twitter Followers Egograph Scraper](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/Scrapers/Tweepy/Tweepy_TwitterFollowersEgographScraper.ipynb) with `tweepy` | 
+| [Twitter Followers Egograph Scraper](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/Scrapers/Twint/Twint_TwitterFollowersEgographScraper.ipynb) with `twint` |
 
 
 <h3 align="center">
@@ -66,4 +70,4 @@
 | ![@ClaudioMoroni3_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_1.png) @ClaudioMoroni3 | ![@PietroMonticone_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_1.png) [@PietroMonticone](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/) | ![@ClaudioMoroni3_2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_2.png) @ClaudioMoroni3¹ | ![@PietroMonticone_22](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_21.png) [@PietroMonticone](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/)¹|
 |:--------:|:-------:|:--------:|:-------:|
 
-<sup>**[1]** This is a second order egograph comprising all the nodes, but not all the edges.</sup>
+<sup>**[1]** This is a second order egograph with missing edges.</sup>
