@@ -1,5 +1,5 @@
 ---
-title: 'Twitter Egograph Downloader `r icon::fa("twitter", color = "white", size = 1)`'
+title: 'Twitter Friends Egograph Scraper `r icon::fa("twitter", color = "white", size = 1)`'
 author: '**Pietro Monticone** [`r icon::fa("github", color = "white")`](https://github.com/pitmonticone) | **Claudio Moroni** [`r icon::fa("github", color = "white")`](https://github.com/claudio20497) | **Davide Orsenigo** [`r icon::fa("github", color = "white")`](https://github.com/dadorse)'
 date: '*University of Turin* | `r format(Sys.time(), "%d %B %Y")`'
 output:
@@ -91,6 +91,26 @@ return(ego_friends_friends)
 }
 ```
 
+## **Store Twitter API Keys**
+
+```{r credentials}
+api_key <- "XXXXX"
+api_secret_key <- "YYYYY"
+access_token <- "ZZZZ"
+access_token_secret <- "KKKKK"
+```
+
+## **Authenticate via Web Browser** 
+
+```{r authentication}
+token <- create_token(
+  app = "app_name",
+  consumer_key = api_key,
+  consumer_secret = api_secret_key,
+  access_token = access_token,
+  access_secret = access_token_secret)
+```
+
 ## **Get Friends**
 
 Download all the Twitter friends (i.e. first order followees) of [\@ClaudioMoroni3](https://twitter.com/ClaudioMoroni3).
@@ -134,10 +154,3 @@ pietro_friends_friends <- friend_egonetwork_second("PietroMonticone")
 # Store dataset in .csv file 
 write.csv(as.data.frame(pietro_friends_friends), "pietro_friends_friends.csv")
 ```
-
-
-
-
-
-
-

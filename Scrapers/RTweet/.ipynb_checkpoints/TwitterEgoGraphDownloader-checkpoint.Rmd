@@ -1,0 +1,143 @@
+---
+title: 'Twitter Followee Egograph Scraper `r icon::fa("twitter", color = "white", size = 1)`'
+author: '**Pietro Monticone** [`r icon::fa("github", color = "white")`](https://github.com/pitmonticone) | **Claudio Moroni** [`r icon::fa("github", color = "white")`](https://github.com/claudio20497) | **Davide Orsenigo** [`r icon::fa("github", color = "white")`](https://github.com/dadorse)'
+date: '*University of Turin* | `r format(Sys.time(), "%d %B %Y")`'
+output:
+ prettydoc::html_pretty:
+    theme: cayman
+    highlight: github
+    toc: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+	echo = TRUE,
+	eval = FALSE,
+	include = TRUE,
+	message = FALSE,
+	warning = FALSE,
+	paged.print = FALSE
+)
+```
+
+## **Packages** 
+
+```{r packages}
+# Data Science
+library(tidyverse)
+# Twitter Scraping
+library(rtweet)
+```
+
+## **Functions**
+
+```{r functions}
+# Download the list of all the followes of EGO
+friend_egonetwork_first <- function(ego){
+  ego_friends <- get_friends(
+    ego,
+    retryonratelimit = TRUE)
+### Rename variables
+names(ego_friends) <- c("Source","Target")
+### Store dataset in .csv file 
+###write.csv(as.data.frame(ego_friends), "friends.csv")
+return(ego_friends)
+}
+
+# Download the tibble of all the followes of the followeea of EGO
+follower_egonetwork_first <- function(ego){
+  ego_followers <- get_followers(
+    ego,
+    n = 75000,
+    retryonratelimit = TRUE)
+  
+  #ego_followers_ids <- ego_followers$user_id
+  #names(ego_followers) <- c("Source","Target")
+  #write.csv(as.data.frame(ego_friends), "data/friends.csv")
+  return(ego_followers)
+}
+
+# Download the tibble of all the followes of the followeea of EGO
+friend_egonetwork_second <- function(ego){
+egonetwork_first(ego)
+
+ego_friends_friends <- tibble()
+friend <- 1
+flag <- TRUE
+  
+while( friend <= length(ego_friends_ids ) ) {
+  print(friend)
+  if( flag ){ 
+    new_friend <- get_friends(
+        ego_friends_ids[friend],
+        retryonratelimit = TRUE)
+    
+    ego_friends_friends <- bind_rows(ego_friends_friends, new_friend) 
+      
+    if( friend %% 15 == 0 ){ flag <- FALSE } 
+        friend <- friend + 1
+    }
+    else {
+      print( now() )
+      Sys.sleep(15.1 * 60)
+      flag <- TRUE 
+    } 
+}
+### Rename variables 
+names(ego_friends_friends) <- c("Source","Target")
+### Store dataset in .csv file 
+###write.csv(as.data.frame(ego_friends_friends), "friends_friends.csv")
+return(ego_friends_friends)
+}
+```
+
+## **Get Friends**
+
+Download all the Twitter friends (i.e. first order followees) of [\@ClaudioMoroni3](https://twitter.com/ClaudioMoroni3).
+
+```{r get-claudio-friends}
+# Get the tibble of friends of @ClaudioMoroni3
+claudio_friends <- friend_egonetwork_first("ClaudioMoroni3")
+
+# Store dataset in .csv file 
+write.csv(as.data.frame(claudio_friends), "claudio_friends.csv")
+```
+
+Download all the Twitter friends (i.e. first order followees) of [\@PietroMonticone](https://twitter.com/PietroMonticone).
+
+```{r get-pietro-friends}
+# Get the tibble of friends of @PietroMonticone
+pietro_friends <- friend_egonetwork_first("PietroMonticone")
+
+# Store dataset in .csv file 
+write.csv(as.data.frame(pietro_friends), "pietro_friends.csv")
+```
+
+## **Get Friends of Friends**
+
+Download all the Twitter friends of friends (i.e. second order followees) of [\@ClaudioMoroni3](https://twitter.com/ClaudioMoroni3).
+
+```{r get-claudio-friends-friends}
+# Get the tibble of friends of friends of @ClaudioMoroni3
+claudio_friends_friends <- friend_egonetwork_second("ClaudioMoroni3")
+
+# Store dataset in .csv file 
+write.csv(as.data.frame(claudio_friends_friends), "claudio_friends_friends.csv")
+```
+
+Download all the Twitter friends of friends (i.e. second order followees) of [\@PietroMonticone](https://twitter.com/PietroMonticone).
+
+```{r get-pietro-friends-friends}
+# Get the tibble of friends of friends of @PietroMonticone
+pietro_friends_friends <- friend_egonetwork_second("PietroMonticone")
+
+# Store dataset in .csv file 
+write.csv(as.data.frame(pietro_friends_friends), "pietro_friends_friends.csv")
+```
+
+
+
+
+
+
+
