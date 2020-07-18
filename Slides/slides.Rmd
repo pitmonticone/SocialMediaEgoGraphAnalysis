@@ -1,8 +1,8 @@
 ---
-title: "Social Physics Project"
-subtitle: '<em>Twitter Network Analysis</em> <br><br>'
-author: 'P.Monticone [`r icon::fa("github")`](https://github.com/pitmonticone) | C.Moroni [`r icon::fa("github")`](https://github.com/claudio20497) | D.Orsenigo [`r icon::fa("github")`](https://github.com/dadorse) <br></br>'
-date: "University of Turin | `r format(Sys.time(), '%d %B %Y')`" 
+title: '`r icon::fa("facebook")` Social Physics Project `r icon::fa("twitter")`'
+subtitle: '<em> Egograph Analysis on <br> Facebook and Twitter </em> <br><br><br>'
+author: 'P.Monticone [`r icon::fa("github")`](https://github.com/pitmonticone) | C.Moroni [`r icon::fa("github")`](https://github.com/claudio20497) | D.Orsenigo [`r icon::fa("github")`](https://github.com/dadorse) <br>'
+date: "*University of Turin* | `r format(Sys.time(), '%d %B %Y')`" 
 output:
   xaringan::moon_reader:
     lib_dir: libs
