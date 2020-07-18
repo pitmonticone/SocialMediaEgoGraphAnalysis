@@ -72,4 +72,4 @@
 
 <br>
 
-<sup>**[1]** This is a second order egograph with missing edges.</sup>
+<sup>**[1]** This is a second order egograph with truncated edge set.</sup>
