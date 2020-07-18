@@ -51,13 +51,9 @@
 | Scrapers  | Data | Analysis | 
 | ---- | ---- | ---- |
 | [Twitter Friends Egograph Scraper](https://inphyt.github.io/SocialPhysicsProject/RTweet_TwitterFriendsEgographScraper.html) with `rtweet` | [@ClaudioMoroni3](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Data/GraphML/%40ClaudioMoroni3_1.graphml) at 1ˢᵗ Order | [@PietroMonticone](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/Analysis/Twitter1.ipynb) at 1ˢᵗ Order |
-
 | [Twitter Followers Egograph Scraper](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/Scrapers/Tweepy/Tweepy_TwitterFollowersEgographScraper.ipynb) with `tweepy` | [@ClaudioMoroni3](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Data/GraphML/%40ClaudioMoroni3_2.graphml) at 2ⁿᵈ Order | [@PietroMonticone](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/Analysis/Twitter2.ipynb) at 2ⁿᵈ Order |
-
 | [Twitter Followers Egograph Scraper](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/Scrapers/Twint/Twint_TwitterFollowersEgographScraper.ipynb) with `twint` | [@PietroMonticone](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Data/GraphML/%40PietroMonticone_1.graphml) at 1ˢᵗ Order | [Facebook User 1](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/Analysis/Facebook1.ipynb) at 1ˢᵗ Order |
-
 || [@PietroMonticone](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Data/GraphML/%40PietroMonticone_2.graphml) at 2ⁿᵈ Order | [Facebook User 2](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/Analysis/Facebook2.ipynb) at 1ˢᵗ Order |
-
 || [Facebook User 1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Data/GraphML/Facebook1.graphml) at 1ˢᵗ Order |
 || [Facebook User 2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Data/GraphML/Facebook1.graphml) at 1ˢᵗ Order | 
 
