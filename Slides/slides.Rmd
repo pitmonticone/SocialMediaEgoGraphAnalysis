@@ -1,6 +1,6 @@
 ---
 title: '`r icon::fa("facebook")` Social Physics Project `r icon::fa("twitter")`'
-subtitle: '<em> Egograph Analysis on <br> Facebook and Twitter </em> <br><br><br>'
+subtitle: '<em> Ego Graph Analysis on <br> Facebook and Twitter </em> <br><br><br>'
 author: 'P.Monticone [`r icon::fa("github")`](https://github.com/pitmonticone) | C.Moroni [`r icon::fa("github")`](https://github.com/claudio20497) | D.Orsenigo [`r icon::fa("github")`](https://github.com/dadorse) <br>'
 date: "*University of Turin* | `r format(Sys.time(), '%d %B %Y')`" 
 output:
@@ -14,12 +14,23 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(message = FALSE, warning = FALSE, include = FALSE, eval = FALSE) 
+knitr::opts_chunk$set(message = FALSE, warning = FALSE, include = FALSE, eval = TRUE) 
 library(DT)
 library(knitr)
 library(tidyverse)
 ```
 
+name: overview
+class: center 
+
+## Overview 
+
+.left[ 
+1. Web scraping 
+--
+1. ajajaj]
+
+---
 name: low-resolution
 class: center 
 
@@ -36,7 +47,23 @@ class: center
 
 ### Medium Resolution 
 
-![Medium](figures/PietroMonticone_Medium.png)
+```{r pipeline, echo=FALSE, message=FALSE, warning=FALSE, paged.print=FALSE}
+library(DiagrammeR)
+
+DiagrammeR::grViz("digraph {
+  graph [layout = dot, rankdir = TB]
+  
+  node [shape = rectangle]        
+  rec1 [label = 'Web Scraping']
+  rec2 [label = 'Data Manipulation']
+  rec3 [label =  'Data Analysis']
+  rec4 [label = 'Epidemics on Static Ego Graph']
+  
+  # edge definitions with the node IDs
+  rec1 -> rec2 -> rec3 -> rec4
+  }", 
+  height = 100)
+```
 
 ---
 name: high-resolution
