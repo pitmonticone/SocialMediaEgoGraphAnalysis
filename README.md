@@ -27,7 +27,7 @@
 
 <!-- Subtitle -->
 <h2 align="center">
-  Ego Graph Analysis on Facebook and Twitter
+  Ego Graph Analysis on Social Media
 </h2>
 
 <!-- Badges -->
