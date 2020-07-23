@@ -43,6 +43,17 @@
   
 </p>
 
+<h2 align="center">
+  Authors
+</h2>
+
+| Name  | GitHub | Contributions | 
+|:-----|:-----|:-----|
+| Monticone Pietro | [@pitmonticone](https://github.com/pitmonticone) | |
+| Moroni Claudio | [@claudio20497](https://github.com/claudio20497) | |
+| Orsenigo Davide | [@dadorse](https://github.com/dadorse) | | 
+
+
 
 <h2 align="center">
   Contents
