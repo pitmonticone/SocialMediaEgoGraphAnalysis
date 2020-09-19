@@ -20,13 +20,8 @@
 
 <!-- Title -->
 <h1 align="center">
-  Social Physics Project
-</h1>
-
-<!-- Subtitle -->
-<h2 align="center">
   Ego Graph Analysis on Social Media
-</h2>
+</h1>
 
 <!-- Badges -->
 </p>
