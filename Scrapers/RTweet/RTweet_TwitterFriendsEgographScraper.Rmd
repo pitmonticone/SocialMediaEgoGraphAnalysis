@@ -32,7 +32,7 @@ library(rtweet)
 ## **Functions**
 
 ```{r functions}
-# Download the list of all the followes of EGO
+# Download the list of all the followees of EGO
 friend_egonetwork_first <- function(ego){
   ego_friends <- get_friends(
     ego,

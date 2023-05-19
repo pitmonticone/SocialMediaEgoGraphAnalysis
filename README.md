@@ -2,16 +2,16 @@
 </p>
 
 <p align="center">
-    <img alt="Size" src="https://img.shields.io/github/repo-size/InPhyT/SocialPhysicsProject">
+    <img alt="Size" src="https://img.shields.io/github/repo-size/pitmonticone/SocialMediaEgoGraphAnalysis">
   </a>
-  <img alt="Forks" src="https://img.shields.io/github/forks/InPhyT/SocialPhysicsProject">
+  <img alt="Forks" src="https://img.shields.io/github/forks/pitmonticone/SocialMediaEgoGraphAnalysis">
   </a>
-  <img alt="Stars" src="https://img.shields.io/github/stars/InPhyT/SocialPhysicsProject">
+  <img alt="Stars" src="https://img.shields.io/github/stars/pitmonticone/SocialMediaEgoGraphAnalysis">
   </a>
-  <img alt="Languages" src="https://img.shields.io/github/languages/count/InPhyT/SocialPhysicsProject">
+  <img alt="Languages" src="https://img.shields.io/github/languages/count/pitmonticone/SocialMediaEgoGraphAnalysis">
   </a>
-  <a href="https://github.com/InPhyT/SocialPhysicsProject/graphs/contributors">
-  <img alt="Licence" src="https://img.shields.io/github/license/InPhyT/SocialPhysicsProject">
+  <a href="https://github.com/pitmonticone/SocialMediaEgoGraphAnalysis/graphs/contributors">
+  <img alt="Licence" src="https://img.shields.io/github/license/pitmonticone/SocialMediaEgoGraphAnalysis">
   </a>
   <img alt="Twitter" src="https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FInPhyT%2FSocialPhysicsProject"
   </a>
@@ -27,10 +27,10 @@
 </p>
 
 <p align="center">
-  <a href="https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/">
-    <img alt="nbviewer" src="https://github.com/jupyter/design/blob/master/logos/Badges/nbviewer_badge.svg">
+  <a href="https://nbviewer.jupyter.org/github/pitmonticone/SocialMediaEgoGraphAnalysis/">
+    <img alt="nbviewer" src="https://raw.githubusercontent.com/jupyter/design/master/logos/Badges/nbviewer_badge.svg">
   </a>
-  <a href="https://colab.research.google.com/github/InPhyT/SocialPhysicsProject/blob/master">
+  <a href="https://colab.research.google.com/github/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master">
     <img alt="Colab" src="https://colab.research.google.com/assets/colab-badge.svg">
   </a>
   
@@ -43,7 +43,7 @@
 | Name  | GitHub |
 |:-----|:-----|
 | Monticone Pietro | [@pitmonticone](https://github.com/pitmonticone) | 
-| Moroni Claudio | [@claudio20497](https://github.com/claudio20497) | 
+| Moroni Claudio | [@ClaudMor](https://github.com/ClaudMor) | 
 | Orsenigo Davide | [@daorse](https://github.com/daorse) | 
 
 
@@ -54,16 +54,16 @@
 
 | Scrapers  | Data | Analysis | 
 |-----|-----|-----|
-| [Twitter Friends Ego Graph Scraper](https://inphyt.github.io/SocialPhysicsProject/Scrapers/RTweet/RTweet_TwitterFriendsEgographScraper.html) with `rtweet` | [@PietroMonticone](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Data/GraphML/@PietroMonticone1.graphml) at 1ˢᵗ Order | [@PietroMonticone](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/blob/master/Analysis/Twitter1.ipynb) at 1ˢᵗ Order |
-| [Twitter Followers Ego Graph Scraper](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/blob/master/Scrapers/Tweepy/Tweepy_TwitterFollowersEgographScraper.ipynb) with `tweepy` | [@PietroMonticone](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Data/GraphML/@PietroMonticone2.graphml) at 2ⁿᵈ Order | [@PietroMonticone](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/blob/master/Analysis/Twitter2.ipynb) at 2ⁿᵈ Order |
-| [Twitter Followers Ego Graph Scraper](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/blob/master/Scrapers/Twint/Twint_TwitterFollowersEgographScraper.ipynb) with `twint` | [Facebook User 1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Data/GraphML/Facebook1.graphml) at 1ˢᵗ Order | [Facebook User 1](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/blob/master/Analysis/Facebook1.ipynb) at 1ˢᵗ Order |
-|| [Facebook User 2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Data/GraphML/Facebook2.graphml) at 1ˢᵗ Order | [Facebook User 2](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/blob/master/Analysis/Facebook2.ipynb) at 1ˢᵗ Order |
+| [Twitter Friends Ego Graph Scraper](https://inphyt.github.io/SocialPhysicsProject/Scrapers/RTweet/RTweet_TwitterFriendsEgographScraper.html) with `rtweet` | [@PietroMonticone](https://github.com/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Data/GraphML/@PietroMonticone1.graphml) at 1ˢᵗ Order | [@PietroMonticone](https://nbviewer.jupyter.org/github/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Analysis/Twitter1.ipynb) at 1ˢᵗ Order |
+| [Twitter Followers Ego Graph Scraper](https://nbviewer.jupyter.org/github/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Scrapers/Tweepy/Tweepy_TwitterFollowersEgographScraper.ipynb) with `tweepy` | [@PietroMonticone](https://github.com/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Data/GraphML/@PietroMonticone2.graphml) at 2ⁿᵈ Order | [@PietroMonticone](https://nbviewer.jupyter.org/github/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Analysis/Twitter2.ipynb) at 2ⁿᵈ Order |
+| [Twitter Followers Ego Graph Scraper](https://nbviewer.jupyter.org/github/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Scrapers/Twint/Twint_TwitterFollowersEgographScraper.ipynb) with `twint` | [Facebook User 1](https://github.com/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Data/GraphML/Facebook1.graphml) at 1ˢᵗ Order | [Facebook User 1](https://nbviewer.jupyter.org/github/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Analysis/Facebook1.ipynb) at 1ˢᵗ Order |
+|| [Facebook User 2](https://github.com/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Data/GraphML/Facebook2.graphml) at 1ˢᵗ Order | [Facebook User 2](https://nbviewer.jupyter.org/github/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Analysis/Facebook2.ipynb) at 1ˢᵗ Order |
 
 <h3 align="center">
   Facebook
 </h3>
 
-| ![Facebook1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook4.png) [Anonymous User 1](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/blob/master/Analysis/Facebook1.ipynb) | ![Facebook2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook3.png) [Anonymous User 2](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/blob/master/Analysis/Facebook2.ipynb) | ![Facebook3](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook2.png) Anonymous User 3 | ![Facebook4](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook1.png) Anonymous User 4 | ![Facebook5](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/Facebook5.png) Anonymous User 5 | 
+| ![Facebook1](https://github.com/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Images/Facebook4.png) [Anonymous User 1](https://nbviewer.jupyter.org/github/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Analysis/Facebook1.ipynb) | ![Facebook2](https://github.com/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Images/Facebook3.png) [Anonymous User 2](https://nbviewer.jupyter.org/github/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Analysis/Facebook2.ipynb) | ![Facebook3](https://github.com/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Images/Facebook2.png) Anonymous User 3 | ![Facebook4](https://github.com/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Images/Facebook1.png) Anonymous User 4 | ![Facebook5](https://github.com/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Images/Facebook5.png) Anonymous User 5 | 
 |:--------:|:-------:|:--------:|:-------:|:--------:|
 
 
@@ -71,7 +71,7 @@
   Twitter
 </h3>
 
-| ![@ClaudioMoroni3_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_1.png) @ClaudioMoroni3 | ![@PietroMonticone_1](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_1.png) [@PietroMonticone](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/blob/master/Analysis/Twitter1.ipynb) | ![@ClaudioMoroni3_2](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@ClaudioMoroni3_2.png) @ClaudioMoroni3¹ | ![@PietroMonticone_22](https://github.com/InPhyT/SocialPhysicsProject/blob/master/Images/@PietroMonticone_21.png) [@PietroMonticone](https://nbviewer.jupyter.org/github/InPhyT/SocialPhysicsProject/blob/master/Analysis/Twitter2.ipynb)¹|
+| ![@ClaudioMoroni3_1](https://github.com/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Images/@ClaudioMoroni3_1.png) @ClaudioMoroni3 | ![@PietroMonticone_1](https://github.com/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Images/@PietroMonticone_1.png) [@PietroMonticone](https://nbviewer.jupyter.org/github/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Analysis/Twitter1.ipynb) | ![@ClaudioMoroni3_2](https://github.com/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Images/@ClaudioMoroni3_2.png) @ClaudioMoroni3¹ | ![@PietroMonticone_22](https://github.com/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Images/@PietroMonticone_21.png) [@PietroMonticone](https://nbviewer.jupyter.org/github/pitmonticone/SocialMediaEgoGraphAnalysis/blob/master/Analysis/Twitter2.ipynb)¹|
 |:--------:|:-------:|:--------:|:-------:|
 
 <br>
